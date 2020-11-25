@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_bottom",
+  "textures": {
+    "bottom": "baleful:block/blossom_planks_door_bottom",
+    "top": "baleful:block/blossom_planks_door_top"
+  }
+}

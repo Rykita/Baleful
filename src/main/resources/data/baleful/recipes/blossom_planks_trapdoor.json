@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "   ",
+    "xxx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "baleful:blossom_planks"
+    }
+  },
+  "result":
+  {
+    "item": "baleful:blossom_planks_trapdoor",
+    "count": 2
+  }
+}

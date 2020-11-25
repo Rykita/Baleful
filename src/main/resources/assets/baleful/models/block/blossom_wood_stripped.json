@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "baleful:block/blossom_stem_stripped_side",
+    "side": "baleful:block/blossom_stem_stripped_side"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "baleful:block/ardorium_block" }
+  }
+}

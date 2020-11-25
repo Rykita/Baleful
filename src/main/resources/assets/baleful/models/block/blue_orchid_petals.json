@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "baleful:block/blue_orchid_petal"
+  }
+}

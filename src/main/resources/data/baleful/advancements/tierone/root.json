@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "baleful:blossom_planks"
+    },
+    "title": {
+      "translate": "advancements.tierone.root.title"
+    },
+    "description": {
+      "translate": "advancements.tierone.root.desc"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "baleful:textures/advancements/gui/backgrounds/tierone.png"
+  },
+  "criteria": {
+    "ardorium_obtain": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {"item": "baleful:unstable_ardorium_ingot"}
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ardorium_obtain"
+    ]
+  ]
+}

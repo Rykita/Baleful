@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "   ",
+    "cxc",
+    "cxc"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "baleful:blossom_planks"
+    },
+
+    "c":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "baleful:blossom_planks_fencegate",
+    "count": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "axis=y":  { "model": "baleful:block/blossom_wood" },
+    "axis=z":   { "model": "baleful:block/blossom_wood", "x": 90 },
+    "axis=x":   { "model": "baleful:block/blossom_wood", "x": 90, "y": 90 },
+    "axis=none": { "model": "baleful:block/blossom_wood" }
+  }
+}

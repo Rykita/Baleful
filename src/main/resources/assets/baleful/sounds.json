@@ -1,0 +1,29 @@
+{
+  "entity.armstrong_ambient": {
+    "category": "entity",
+    "subtitle": "entity.armstrong_ambient",
+    "sounds": [
+      {
+        "name": "baleful:entity/armstrong_ambient",
+        "stream": "true",
+        "volume": 0.4, "pitch": 1.0
+      },
+      {
+        "name": "baleful:entity/armstrong_ambient2",
+        "stream": "true",
+        "volume": 0.4, "pitch": 1.0
+      }
+    ]
+  },
+  "entity.armstrong_hurt": {
+    "category": "entity",
+    "subtitle": "entity.armstrong_hurt",
+    "sounds":[
+      {
+        "name": "baleful:entity/armstrong_hurt",
+        "stream": "true",
+        "volume": 1.4, "pitch": 1.0
+      }
+    ]
+  }
+}

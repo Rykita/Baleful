@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "baleful:block/blossom_stem_stripped_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "baleful:block/blossom_stem_stripped"
+    },
+    "axis=z": {
+      "model": "baleful:block/blossom_stem_stripped_horizontal",
+      "x": 90
+    }
+  }
+}
