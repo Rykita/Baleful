@@ -21,6 +21,12 @@ public class WorldGen {
 
     public static final DeferredRegister<Feature<?>> worldGenFeature = DeferredRegister.create(ForgeRegistries.FEATURES, Baleful.MOD_ID);
 
+    /*I'm registering this shit directly to Vanilla registries because ConfiguredFeature is broken in Forge.
+    / As Lex said: You shouldn't need to have a registry entry for them, just an object in the builder.
+    / But as it turns out there's a bug if you don't register them.
+    / So for now I'm registering this to Vanilla registries until there's a Forge way of adding ConfiguredFeature.
+    */
+
 
     public static ConfiguredFeature<?, ?> TOURMALINE_ORE;
 

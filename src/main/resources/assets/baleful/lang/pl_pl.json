@@ -18,5 +18,13 @@
   "item.baleful.ardorium_hoe": "Ardoryjna motyka",
   "item.baleful.ardorium_shovel": "Ardoryjna łopata",
   "item.baleful.ardorium_ingot": "Sztabka Ardorium",
-  "block.baleful.blossom_wood": "Kwietne drewno"
+  "block.baleful.blossom_wood": "Kwietne drewno",
+  "item.baleful.minor_tourmaline": "Mniejszy Turmalin",
+  "item.baleful.modest_tourmaline": "Turmalin",
+  "item.baleful.major_tourmaline": "Większy Turmalin",
+  "block.baleful.tourmaline_ore": "Ruda turmalinu",
+  "advancements.husbandry.baleful_hoe.title": "Ze wszystkich rzeczy...",
+  "advancements.husbandry.baleful_hoe.description": "CZEMU?! Strać dwie sztabki Ardorium poprzez stworzenie Ardoryjnej motyki. Czy czujesz się dumny?",
+  "advancements.tierone.root.title": "Poziom Pierwszy",
+  "advancements.tierone.root.desc": "Zdobądź niestabilną sztabkę Ardorium"
 }
