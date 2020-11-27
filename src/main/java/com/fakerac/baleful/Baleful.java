@@ -6,13 +6,17 @@ import com.fakerac.baleful.entities.RayEntity;
 import com.fakerac.baleful.init.EntityTypes;
 import com.fakerac.baleful.init.SoundInit;
 import com.fakerac.baleful.util.RegistryHandler;
+import com.fakerac.baleful.world.gen.WorldGen;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.registry.WorldGenRegistries;
+import net.minecraft.world.gen.feature.Feature;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DeferredWorkQueue;
@@ -52,6 +56,9 @@ public class Baleful
         RegistryHandler.init();
         SoundInit.SOUNDS.register(modEventBus);
         EntityTypes.ENTITY_TYPES.register(modEventBus);
+        WorldGen.worldGenFeature.register(modEventBus);
+        FMLJavaModLoadingContext.get().getModEventBus().addGenericListener(Feature.class, EventPriority.LOW, WorldGen::addConfigFeatures);
+        MinecraftForge.EVENT_BUS.addListener(WorldGen::handleWorldGen);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

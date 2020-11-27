@@ -106,18 +106,4 @@ public class ArmstrongEntity extends ZombieEntity {
         super.addTrackingPlayer(player);
         this.bossInfo.addPlayer(player);
     }
-
-    @Override
-    public boolean attackEntityFrom(DamageSource source, float amount) {
-        if (this.isInvulnerableTo(source)) {
-            return false;
-        } else if (getHealth() > 0) {
-            Entity entity = source.getImmediateSource();
-            if (entity instanceof AbstractArrowEntity) {
-                return false;
-            } else {
-                return true;
-            }
-        }
-    return true;}
 }

@@ -3,6 +3,7 @@ package com.fakerac.baleful.util;
 import com.fakerac.baleful.Baleful;
 import com.fakerac.baleful.armor.BalefulArmorMaterial;
 import com.fakerac.baleful.blocks.*;
+import com.fakerac.baleful.blocks.ores.TourmalineOre;
 import com.fakerac.baleful.blocks.petals.*;
 import com.fakerac.baleful.items.ItemEnchantGlintUncommon;
 import com.fakerac.baleful.tools.BalefulItemTier;
@@ -115,6 +116,7 @@ public class RegistryHandler {
     public static final RegistryObject<Block> SYRINGA_PETALS = BLOCKS.register("syringa_petals", SyringaPetals::new);
     public static final RegistryObject<Block> WHITE_TULIP_PETALS = BLOCKS.register("white_tulip_petals", WhiteTulipPetals::new);
     public static final RegistryObject<Block> WITHER_ROSE_PETALS = BLOCKS.register("wither_rose_petals", WitherRosePetals::new);
+    public static final RegistryObject<Block> TOURMALINE_ORE = BLOCKS.register("tourmaline_ore", TourmalineOre::new);
 
 
 
@@ -156,6 +158,7 @@ public class RegistryHandler {
     public static final RegistryObject<Item> SYRINGA_PETALS_ITEM = ITEMS.register("syringa_petals", () -> new BlockDecorationItemBase(SYRINGA_PETALS.get()));
     public static final RegistryObject<Item> WHITE_TULIP_PETALS_ITEM = ITEMS.register("white_tulip_petals", () -> new BlockDecorationItemBase(WHITE_TULIP_PETALS.get()));
     public static final RegistryObject<Item> WITHER_ROSE_PETALS_ITEM = ITEMS.register("wither_rose_petals", () -> new BlockDecorationItemBase(WITHER_ROSE_PETALS.get()));
+    public static final RegistryObject<Item> TOURMALINE_ORE_ITEM = ITEMS.register("tourmaline_ore", () -> new BlockItemBase(TOURMALINE_ORE.get()));
 
 
 

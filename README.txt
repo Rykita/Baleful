@@ -1,53 +1,18 @@
--------------------------------------------
-Source installation information for modders
--------------------------------------------
-This code follows the Minecraft Forge installation methodology. It will apply
-some small patches to the vanilla MCP source code, giving you and it access 
-to some of the data and functions you need to build a successful mod.
+---------------------------------------
+Notice for modpack makers
+---------------------------------------
 
-Note also that the patches are built against "unrenamed" MCP source code (aka
-srgnames) - this means that you will not be able to read them directly against
-normal code.
+You are free to use this mod in a modpack however you want as long as proper credit is given.
 
-Source pack installation information:
+You are free to make addons for this mod (although my horrible code practices may make it hard in some places)
 
-Standalone source installation
-==============================
+You are free to fork this mod but you cannot claim it is your own, you need to give proper credit to Fakerac and SeaOfPixels, make it open source, you also need to make modify  to the mod in a substantial way.
 
-See the Forge Documentation online for more detailed instructions:
-http://mcforge.readthedocs.io/en/latest/gettingstarted/
 
-Step 1: Open your command-line and browse to the folder where you extracted the zip file.
+Do. Not. Steal this mod, any cases of Baleful being stolen by individuals who claim it's their mod should be reported directly to me on Discord: Fakerac#8754
 
-Step 2: You're left with a choice.
-If you prefer to use Eclipse:
-1. Run the following command: "gradlew genEclipseRuns" (./gradlew genEclipseRuns if you are on Mac/Linux)
-2. Open Eclipse, Import > Existing Gradle Project > Select Folder 
-   or run "gradlew eclipse" to generate the project.
-(Current Issue)
-4. Open Project > Run/Debug Settings > Edit runClient and runServer > Environment
-5. Edit MOD_CLASSES to show [modid]%%[Path]; 2 times rather then the generated 4.
+Feel free to submit any bugs to https://github.com/Fakerac/Baleful/issues
 
-If you prefer to use IntelliJ:
-1. Open IDEA, and import project.
-2. Select your build.gradle file and have it import.
-3. Run the following command: "gradlew genIntellijRuns" (./gradlew genIntellijRuns if you are on Mac/Linux)
-4. Refresh the Gradle Project in IDEA if required.
+And most importantly have fun with the mod and I hope you enjoy this little experience I've made.
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can run "gradlew --refresh-dependencies" to refresh the local cache. "gradlew clean" to reset everything {this does not affect your code} and then start the processs again.
-
-Should it still not work, 
-Refer to #ForgeGradle on EsperNet for more information about the gradle environment.
-or the Forge Project Discord discord.gg/UvedJ9m
-
-Forge source installation
-=========================
-MinecraftForge ships with this code and installs it as part of the forge
-installation process, no further action is required on your part.
-
-LexManos' Install Video
-=======================
-https://www.youtube.com/watch?v=8VEdtQLuLO0&feature=youtu.be
-
-For more details update more often refer to the Forge Forums:
-http://www.minecraftforge.net/forum/index.php/topic,14048.0.html
+NOTE: THE MOD IS IN VERY EARLY STAGES, Many features may not be functional yet, if you encounter bugs make sure to report them, there might be bugs or issues with the mod am not currently aware of!
