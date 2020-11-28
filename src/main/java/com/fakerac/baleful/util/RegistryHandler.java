@@ -117,6 +117,11 @@ public class RegistryHandler {
     public static final RegistryObject<Block> WHITE_TULIP_PETALS = BLOCKS.register("white_tulip_petals", WhiteTulipPetals::new);
     public static final RegistryObject<Block> WITHER_ROSE_PETALS = BLOCKS.register("wither_rose_petals", WitherRosePetals::new);
     public static final RegistryObject<Block> TOURMALINE_ORE = BLOCKS.register("tourmaline_ore", TourmalineOre::new);
+    public static final RegistryObject<Block> FLORAL_SPROUTS = BLOCKS.register("floral_sprouts", FloralSprouts::new);
+    public static final RegistryObject<Block> ROSE = BLOCKS.register("rose", Rose::new);
+    public static final RegistryObject<Block> SYRINGA = BLOCKS.register("syringa", Syringa::new);
+    public static final RegistryObject<Block> PAEONIA = BLOCKS.register("paeonia", Paeonia::new);
+    public static final RegistryObject<Block> AQUA_HYDRANGEA = BLOCKS.register("aqua_hydrangea", AquaHydrangea::new);
 
 
 
@@ -159,6 +164,11 @@ public class RegistryHandler {
     public static final RegistryObject<Item> WHITE_TULIP_PETALS_ITEM = ITEMS.register("white_tulip_petals", () -> new BlockDecorationItemBase(WHITE_TULIP_PETALS.get()));
     public static final RegistryObject<Item> WITHER_ROSE_PETALS_ITEM = ITEMS.register("wither_rose_petals", () -> new BlockDecorationItemBase(WITHER_ROSE_PETALS.get()));
     public static final RegistryObject<Item> TOURMALINE_ORE_ITEM = ITEMS.register("tourmaline_ore", () -> new BlockItemBase(TOURMALINE_ORE.get()));
+    public static final RegistryObject<Item> FLORAL_SPROUTS_ITEM = ITEMS.register("floral_sprouts", () -> new BlockDecorationItemBase(FLORAL_SPROUTS.get()));
+    public static final RegistryObject<Item> PAEONIA_ITEM = ITEMS.register("paeonia", () -> new BlockDecorationItemBase(PAEONIA.get()));
+    public static final RegistryObject<Item> ROSE_ITEM = ITEMS.register("rose", () -> new BlockDecorationItemBase(ROSE.get()));
+    public static final RegistryObject<Item> AQUA_HYDRANGEA_ITEM = ITEMS.register("aqua_hydrangea", () -> new BlockDecorationItemBase(AQUA_HYDRANGEA.get()));
+    public static final RegistryObject<Item> SYRINGA_ITEM = ITEMS.register("syringa", () -> new BlockDecorationItemBase(SYRINGA.get()));
 
 
 

@@ -29,5 +29,10 @@ public class ClientEventBusSubscriber {
         RenderingRegistry.registerEntityRenderingHandler(EntityTypes.MOOBLOOM.get(), MoobloomEntityRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(EntityTypes.RAY.get(), RayEntityRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(EntityTypes.ARMSTRONG.get(), ArmstrongEntityRenderer::new);
+        RenderTypeLookup.setRenderLayer(RegistryHandler.FLORAL_SPROUTS.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(RegistryHandler.PAEONIA.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(RegistryHandler.SYRINGA.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(RegistryHandler.ROSE.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(RegistryHandler.AQUA_HYDRANGEA.get(), RenderType.getCutout());
     }
 }

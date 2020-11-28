@@ -10,7 +10,7 @@ import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.IBlockReader;
 
-public class ButtercupFlower extends BushBlock {
+public class Paeonia extends BushBlock {
 
     protected static final VoxelShape NORMAL = Block.makeCuboidShape(6.0D, 0.0D, 6.0D, 10.0D, 9.0D, 10.0D);
 
@@ -19,12 +19,12 @@ public class ButtercupFlower extends BushBlock {
         return AbstractBlock.OffsetType.XZ;
     }
 
-    public ButtercupFlower() {
+    public Paeonia() {
         super(Block.Properties.create(Material.PLANTS)
-        .sound(SoundType.PLANT)
-        .notSolid()
-        .doesNotBlockMovement()
-        .hardnessAndResistance(0.1F, 0.1F));
+                .sound(SoundType.PLANT)
+                .notSolid()
+                .doesNotBlockMovement()
+                .hardnessAndResistance(0.1F, 0.1F));
     }
 
     @Override

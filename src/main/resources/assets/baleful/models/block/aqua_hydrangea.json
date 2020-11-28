@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "baleful:block/aqua_hydrangea"
+  }
+}
