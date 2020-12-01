@@ -1,5 +1,6 @@
-package com.fakerac.baleful.util;
+package com.fakerac.baleful.init;
 
+import com.fakerac.baleful.util.RegistryHandler;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 
