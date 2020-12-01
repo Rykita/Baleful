@@ -34,48 +34,48 @@ public class RegistryHandler {
     //Items
     public static final RegistryObject<Item> STAR_PIECES = ITEMS.register("star_pieces", ItemEnchantGlintUncommon::new);
     public static final RegistryObject<Item> STARDUST = ITEMS.register("stardust", ItemEnchantGlintUncommon::new);
-    public static final RegistryObject<Item> UNSTABLE_ARDORIUM_INGOT = ITEMS.register("unstable_ardorium_ingot", () -> new Item(new Item.Properties().group(Baleful.BALEFUL_MISCELLANEOUS).rarity(Rarity.UNCOMMON).isImmuneToFire()));
-    public static final RegistryObject<Item> ARDORIUM_INGOT = ITEMS.register("ardorium_ingot", () -> new Item(new Item.Properties().group(Baleful.BALEFUL_MISCELLANEOUS).rarity(Rarity.UNCOMMON).isImmuneToFire()));
-    public static final RegistryObject<Item> MINOR_TOURMALINE =  ITEMS.register("minor_tourmaline", () -> new Item(new Item.Properties().group(Baleful.BALEFUL_MISCELLANEOUS)));
-    public static final RegistryObject<Item> MODEST_TOURMALINE = ITEMS.register("modest_tourmaline", () -> new Item(new Item.Properties().group(Baleful.BALEFUL_MISCELLANEOUS)));
-    public static final RegistryObject<Item> MAJOR_TOURMALINE = ITEMS.register("major_tourmaline", () -> new Item(new Item.Properties().group(Baleful.BALEFUL_MISCELLANEOUS)));
+    public static final RegistryObject<Item> UNSTABLE_ARDORIUM_INGOT = ITEMS.register("unstable_ardorium_ingot", () -> new Item(new Item.Properties().group(BalefulItemGroups.BALEFUL_MISCELLANEOUS).rarity(Rarity.UNCOMMON).isImmuneToFire()));
+    public static final RegistryObject<Item> ARDORIUM_INGOT = ITEMS.register("ardorium_ingot", () -> new Item(new Item.Properties().group(BalefulItemGroups.BALEFUL_MISCELLANEOUS).rarity(Rarity.UNCOMMON).isImmuneToFire()));
+    public static final RegistryObject<Item> MINOR_TOURMALINE =  ITEMS.register("minor_tourmaline", () -> new Item(new Item.Properties().group(BalefulItemGroups.BALEFUL_MISCELLANEOUS)));
+    public static final RegistryObject<Item> MODEST_TOURMALINE = ITEMS.register("modest_tourmaline", () -> new Item(new Item.Properties().group(BalefulItemGroups.BALEFUL_MISCELLANEOUS)));
+    public static final RegistryObject<Item> MAJOR_TOURMALINE = ITEMS.register("major_tourmaline", () -> new Item(new Item.Properties().group(BalefulItemGroups.BALEFUL_MISCELLANEOUS)));
 
 
 
     //Tools
     public static final RegistryObject<SwordItem> MURASAMA = ITEMS.register("murasama", Murasama::new);
-    public static final RegistryObject<SwordItem> ARDORIUM_SWORD = ITEMS.register("ardorium_sword", () -> new SwordItem(BalefulItemTier.ARDORIUM, 8, -2.4F, new Item.Properties().group(Baleful.BALEFUL_COMBAT).rarity(Rarity.UNCOMMON).isImmuneToFire()));
-    public static final RegistryObject<ShovelItem> ARDORIUM_SHOVEL = ITEMS.register("ardorium_shovel", () -> new ShovelItem(BalefulItemTier.ARDORIUM, 6, -3F, new Item.Properties().group(Baleful.BALEFUL_TOOLS).rarity(Rarity.UNCOMMON).isImmuneToFire()));
-    public static final RegistryObject<PickaxeItem> ARDORIUM_PICKAXE = ITEMS.register("ardorium_pickaxe", () -> new PickaxeItem(BalefulItemTier.ARDORIUM, 6, -2.8F, new Item.Properties().group(Baleful.BALEFUL_TOOLS).rarity(Rarity.UNCOMMON).isImmuneToFire()));
-    public static final RegistryObject<AxeItem> ARDORIUM_AXE = ITEMS.register("ardorium_axe", () -> new AxeItem(BalefulItemTier.ARDORIUM, 10, -3F, new Item.Properties().group(Baleful.BALEFUL_TOOLS).rarity(Rarity.UNCOMMON).isImmuneToFire()));
-    public static final RegistryObject<HoeItem> ARDORIUM_HOE = ITEMS.register("ardorium_hoe", () -> new HoeItem(BalefulItemTier.ARDORIUM, 1, 0F, new Item.Properties().group(Baleful.BALEFUL_TOOLS).rarity(Rarity.UNCOMMON).isImmuneToFire()));
+    public static final RegistryObject<SwordItem> ARDORIUM_SWORD = ITEMS.register("ardorium_sword", () -> new SwordItem(BalefulItemTier.ARDORIUM, 8, -2.4F, new Item.Properties().group(BalefulItemGroups.BALEFUL_COMBAT).rarity(Rarity.UNCOMMON).isImmuneToFire()));
+    public static final RegistryObject<ShovelItem> ARDORIUM_SHOVEL = ITEMS.register("ardorium_shovel", () -> new ShovelItem(BalefulItemTier.ARDORIUM, 6, -3F, new Item.Properties().group(BalefulItemGroups.BALEFUL_TOOLS).rarity(Rarity.UNCOMMON).isImmuneToFire()));
+    public static final RegistryObject<PickaxeItem> ARDORIUM_PICKAXE = ITEMS.register("ardorium_pickaxe", () -> new PickaxeItem(BalefulItemTier.ARDORIUM, 6, -2.8F, new Item.Properties().group(BalefulItemGroups.BALEFUL_TOOLS).rarity(Rarity.UNCOMMON).isImmuneToFire()));
+    public static final RegistryObject<AxeItem> ARDORIUM_AXE = ITEMS.register("ardorium_axe", () -> new AxeItem(BalefulItemTier.ARDORIUM, 10, -3F, new Item.Properties().group(BalefulItemGroups.BALEFUL_TOOLS).rarity(Rarity.UNCOMMON).isImmuneToFire()));
+    public static final RegistryObject<HoeItem> ARDORIUM_HOE = ITEMS.register("ardorium_hoe", () -> new HoeItem(BalefulItemTier.ARDORIUM, 1, 0F, new Item.Properties().group(BalefulItemGroups.BALEFUL_TOOLS).rarity(Rarity.UNCOMMON).isImmuneToFire()));
 
 
 
     //Armor
     public static final RegistryObject<ArmorItem> ARDORIUM_HELMET = ITEMS.register("ardorium_helmet", () ->
-            new ArmorItem(BalefulArmorMaterial.ARDORIUM, EquipmentSlotType.HEAD, new Item.Properties().group(Baleful.BALEFUL_COMBAT).rarity(Rarity.UNCOMMON).isImmuneToFire()));
+            new ArmorItem(BalefulArmorMaterial.ARDORIUM, EquipmentSlotType.HEAD, new Item.Properties().group(BalefulItemGroups.BALEFUL_COMBAT).rarity(Rarity.UNCOMMON).isImmuneToFire()));
 
     public static final RegistryObject<ArmorItem> ARDORIUM_CHESTPLATE = ITEMS.register("ardorium_chestplate", () ->
-            new ArmorItem(BalefulArmorMaterial.ARDORIUM, EquipmentSlotType.CHEST, new Item.Properties().group(Baleful.BALEFUL_COMBAT).rarity(Rarity.UNCOMMON).isImmuneToFire()));
+            new ArmorItem(BalefulArmorMaterial.ARDORIUM, EquipmentSlotType.CHEST, new Item.Properties().group(BalefulItemGroups.BALEFUL_COMBAT).rarity(Rarity.UNCOMMON).isImmuneToFire()));
 
     public static final RegistryObject<ArmorItem> ARDORIUM_LEGGINGS = ITEMS.register("ardorium_leggings", () ->
-            new ArmorItem(BalefulArmorMaterial.ARDORIUM, EquipmentSlotType.LEGS, new Item.Properties().group(Baleful.BALEFUL_COMBAT).rarity(Rarity.UNCOMMON).isImmuneToFire()));
+            new ArmorItem(BalefulArmorMaterial.ARDORIUM, EquipmentSlotType.LEGS, new Item.Properties().group(BalefulItemGroups.BALEFUL_COMBAT).rarity(Rarity.UNCOMMON).isImmuneToFire()));
 
 
     public static final RegistryObject<ArmorItem> ARDORIUM_BOOTS = ITEMS.register("ardorium_boots", () ->
-            new ArmorItem(BalefulArmorMaterial.ARDORIUM, EquipmentSlotType.FEET, new Item.Properties().group(Baleful.BALEFUL_COMBAT).rarity(Rarity.UNCOMMON).isImmuneToFire()));
+            new ArmorItem(BalefulArmorMaterial.ARDORIUM, EquipmentSlotType.FEET, new Item.Properties().group(BalefulItemGroups.BALEFUL_COMBAT).rarity(Rarity.UNCOMMON).isImmuneToFire()));
 
 
     //Masks
     public static final RegistryObject<ArmorItem> MARQEYE_HELMET = ITEMS.register("marqeye_helmet", () ->
-            new ArmorItem(BalefulArmorMaterial.MARQEYE, EquipmentSlotType.HEAD, new Item.Properties().group(Baleful.MASKS).rarity(Rarity.EPIC)));
+            new ArmorItem(BalefulArmorMaterial.MARQEYE, EquipmentSlotType.HEAD, new Item.Properties().rarity(Rarity.EPIC)));
 
     public static final RegistryObject<ArmorItem> SEAOFPIXELS_HELMET = ITEMS.register("sop_helmet", () ->
-            new ArmorItem(BalefulArmorMaterial.SEAOFPIXELS, EquipmentSlotType.HEAD, new Item.Properties().group(Baleful.MASKS).rarity(Rarity.EPIC)));
+            new ArmorItem(BalefulArmorMaterial.SEAOFPIXELS, EquipmentSlotType.HEAD, new Item.Properties().rarity(Rarity.EPIC)));
 
     public static final RegistryObject<ArmorItem> FAKERAC_HELMET = ITEMS.register("fakerac_helmet", () ->
-            new ArmorItem(BalefulArmorMaterial.FAKERAC, EquipmentSlotType.HEAD, new Item.Properties().group(Baleful.MASKS).rarity(Rarity.EPIC)));
+            new ArmorItem(BalefulArmorMaterial.FAKERAC, EquipmentSlotType.HEAD, new Item.Properties().rarity(Rarity.EPIC)));
 
 
 
