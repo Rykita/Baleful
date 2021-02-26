@@ -1,5 +1,6 @@
 package com.fakerac.baleful.blocks;
 
+import com.fakerac.baleful.init.BlockInit;
 import com.fakerac.baleful.util.RegistryHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -14,7 +15,7 @@ import net.minecraftforge.common.ToolType;
 public class BlossomPlanksStairs extends StairsBlock {
 
     public BlossomPlanksStairs() {
-        super(RegistryHandler.BLOSSOM_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD)
+        super(BlockInit.BLOSSOM_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD)
         .hardnessAndResistance(2.0F,3.0F)
         .harvestLevel(0)
         .harvestTool(ToolType.AXE)

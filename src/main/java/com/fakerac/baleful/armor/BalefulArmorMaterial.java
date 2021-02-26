@@ -1,6 +1,7 @@
 package com.fakerac.baleful.armor;
 
 import com.fakerac.baleful.Baleful;
+import com.fakerac.baleful.init.ItemInit;
 import com.fakerac.baleful.util.RegistryHandler;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
@@ -15,21 +16,25 @@ import java.util.function.Supplier;
 public enum BalefulArmorMaterial implements IArmorMaterial {
 
     //Basically, the name in quotations determines what will be the path/name of the armor layer.
-    ARDORIUM(Baleful.MOD_ID + ":ardorium", 43, new int[] { 5, 8, 10, 3}, 20,
+    ARDORIUM(Baleful.MOD_ID + ":ardorium", 43, new int[] { 3, 8, 6, 3}, 20,
             SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4.0F,
-            () -> { return Ingredient.fromItems(RegistryHandler.ARDORIUM_INGOT.get()); }, 0.15F),
+            () -> { return Ingredient.fromItems(ItemInit.ARDORIUM_INGOT.get()); }, 0.15F),
 
     MARQEYE(Baleful.MOD_ID + ":marqeye", 43, new int[] { 1, 2, 3, 1}, 15,
     SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
-            () -> { return Ingredient.fromItems(RegistryHandler.ARDORIUM_INGOT.get()); }, 0.0F),
+            () -> { return Ingredient.fromItems(ItemInit.ARDORIUM_INGOT.get()); }, 0.0F),
 
     SEAOFPIXELS(Baleful.MOD_ID + ":sop", 43, new int[] { 1, 2, 3, 1}, 15,
             SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
-            () -> { return Ingredient.fromItems(RegistryHandler.ARDORIUM_INGOT.get()); }, 0.0F),
+            () -> { return Ingredient.fromItems(ItemInit.ARDORIUM_INGOT.get()); }, 0.0F),
 
     FAKERAC(Baleful.MOD_ID + ":fakerac", 43, new int[] { 1, 2, 3, 1}, 15,
     SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
-            () -> { return Ingredient.fromItems(RegistryHandler.ARDORIUM_INGOT.get()); }, 0.0F);
+            () -> { return Ingredient.fromItems(ItemInit.ARDORIUM_INGOT.get()); }, 0.0F),
+
+    NYDARYX(Baleful.MOD_ID + ":nydaryx", 52, new int[] {3, 8, 6, 3}, 25,
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5.0F, () -> {return Ingredient.fromItems(ItemInit.ARDORIUM_INGOT.get())
+    ; },0.25F);
 
 
 

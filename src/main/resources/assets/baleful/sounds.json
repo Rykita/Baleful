@@ -25,5 +25,78 @@
         "volume": 1.4, "pitch": 1.0
       }
     ]
+  },
+  "block.endgrass_step": {
+    "category": "block",
+    "subtitle": "block.endgrass_step",
+    "sounds": [
+      {
+        "name": "baleful:block/endgrass/endgrass1",
+        "stream": "false",
+        "volume": 1.0, "pitch": 1.0
+      },
+      {
+        "name": "baleful:block/endgrass/endgrass2",
+        "stream": "false",
+        "volume": 1.0, "pitch": 1.0
+      },
+      {
+        "name": "baleful:block/endgrass/endgrass3",
+        "stream": "false",
+        "volume": 1.0, "pitch": 1.0
+      },
+      {
+        "name": "baleful:block/endgrass/endgrass4",
+        "stream": "false",
+        "volume": 1.0, "pitch": 1.0
+      },
+      {
+        "name": "baleful:block/endgrass/endgrass5",
+        "stream": "false",
+        "volume": 1.0, "pitch": 1.0
+      },
+      {
+        "name": "baleful:block/endgrass/endgrass6",
+        "stream": "false",
+        "volume": 1.0, "pitch": 1.0
+      }
+    ]
+  },
+  "block.endgrass_break": {
+    "category": "block",
+    "subtitle": "block.endgrass_break",
+    "sounds": [
+      {
+        "name": "baleful:block/endgrass/dig/endgrassb1",
+        "stream": "false",
+        "volume": 1.0, "pitch": 1.0
+      },
+      {
+        "name": "baleful:block/endgrass/dig/endgrassb2",
+        "stream": "false",
+        "volume": 1.0, "pitch": 1.0
+      },
+      {
+        "name": "baleful:block/endgrass/dig/endgrassb3",
+        "stream": "false",
+        "volume": 1.0, "pitch": 1.0
+      },
+      {
+        "name": "baleful:block/endgrass/dig/endgrassb4",
+        "stream": "false",
+        "volume": 1.0, "pitch": 1.0
+      }
+    ]
+  },
+  "item.ember_mallet_slam": {
+    "category": "item",
+    "subtitle": "item.ember_mallet_slam",
+    "sounds": [
+      {
+        "name": "baleful:item/sulfurasslam",
+        "stream": "false",
+        "volume": 0.6,"pitch": 1.0
+      }
+    ]
   }
 }

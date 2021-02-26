@@ -16,5 +16,7 @@ public class SoundInit {
 
     public static final RegistryObject<SoundEvent> ARMSTRONG_AMBIENT = SOUNDS.register("entity.armstrong_ambient", () -> new SoundEvent(new ResourceLocation(Baleful.MOD_ID, "entity.armstrong_ambient")));
     public static final RegistryObject<SoundEvent> ARMSTRONG_HURT = SOUNDS.register("entity.armstrong_hurt", () -> new SoundEvent(new ResourceLocation(Baleful.MOD_ID, "entity.armstrong_hurt")));
-
+    public static final RegistryObject<SoundEvent> ENDGRASS_STEP = SOUNDS.register("block.endgrass_step", () -> new SoundEvent(new ResourceLocation(Baleful.MOD_ID, "block.endgrass_step")));
+    public static final RegistryObject<SoundEvent> ENDGRASS_BREAK = SOUNDS.register("block.endgrass_break", () -> new SoundEvent(new ResourceLocation(Baleful.MOD_ID, "block.endgrass.break")));
+    public static final RegistryObject<SoundEvent> EMBER_MALLET_SLAM = SOUNDS.register("item.ember_mallet_slam", () -> new SoundEvent(new ResourceLocation(Baleful.MOD_ID, "item.ember_mallet_slam")));
 }

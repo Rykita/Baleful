@@ -1,0 +1,39 @@
+{
+  "parent": "baleful:minecraft/husbandry/obtain_ardorium_hoe",
+  "display": {
+    "icon": {
+      "item": "baleful:nydaryx_hoe",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "translate": "advancements.husbandry.nydaryx_hoe.title"
+    },
+    "description": {
+      "translate": "advancements.husbandry.nydaryx_hoe.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "criteria": {
+    "netherite_hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "baleful:nydaryx_hoe"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "netherite_hoe"
+    ]
+  ]
+}

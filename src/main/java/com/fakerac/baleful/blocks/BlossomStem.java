@@ -1,5 +1,6 @@
 package com.fakerac.baleful.blocks;
 
+import com.fakerac.baleful.init.BlockInit;
 import com.fakerac.baleful.util.RegistryHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -40,7 +41,7 @@ public class BlossomStem extends RotatedPillarBlock {
     @Override
     public BlockState getToolModifiedState(BlockState state, World world, BlockPos pos, PlayerEntity player, ItemStack stack, ToolType toolType) {
         if (toolType == ToolType.AXE) {
-            return RegistryHandler.BLOSSOM_STEM_STRIPPED.get().getDefaultState().with(AXIS, state.get(AXIS));
+            return BlockInit.BLOSSOM_STEM_STRIPPED.get().getDefaultState().with(AXIS, state.get(AXIS));
         }
         return super.getToolModifiedState(state, world, pos, player, stack, toolType);
     }

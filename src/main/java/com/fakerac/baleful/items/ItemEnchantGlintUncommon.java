@@ -1,9 +1,7 @@
 package com.fakerac.baleful.items;
 
-import com.fakerac.baleful.Baleful;
-import com.fakerac.baleful.util.BalefulItemGroups;
+import com.fakerac.baleful.init.BalefulItemGroups;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Rarity;
 

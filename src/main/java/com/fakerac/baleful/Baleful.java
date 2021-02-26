@@ -3,16 +3,12 @@ package com.fakerac.baleful;
 import com.fakerac.baleful.entities.ArmstrongEntity;
 import com.fakerac.baleful.entities.MoobloomEntity;
 import com.fakerac.baleful.entities.RayEntity;
-import com.fakerac.baleful.init.EntityTypes;
-import com.fakerac.baleful.init.SoundInit;
+import com.fakerac.baleful.init.*;
 import com.fakerac.baleful.util.RegistryHandler;
 import com.fakerac.baleful.world.gen.WorldGen;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.registry.WorldGenRegistries;
+import net.minecraft.inventory.container.Slot;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -30,6 +26,9 @@ import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import software.bernie.geckolib3.GeckoLib;
+import top.theillusivec4.curios.api.CuriosApi;
+import top.theillusivec4.curios.api.SlotTypeMessage;
 
 import java.util.stream.Collectors;
 
@@ -53,12 +52,17 @@ public class Baleful
 
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::setup);
-        RegistryHandler.init();
         SoundInit.SOUNDS.register(modEventBus);
+        RegistryHandler.init();
+        BlockInit.init();
+        ItemInit.init();
+        WeaponInit.init();
+        ArmorInit.init();
         EntityTypes.ENTITY_TYPES.register(modEventBus);
         WorldGen.worldGenFeature.register(modEventBus);
         FMLJavaModLoadingContext.get().getModEventBus().addGenericListener(Feature.class, EventPriority.LOW, WorldGen::addConfigFeatures);
         MinecraftForge.EVENT_BUS.addListener(WorldGen::handleWorldGen);
+        GeckoLib.initialize();
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -74,7 +78,7 @@ public class Baleful
 
         // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        LOGGER.info("ARDORIUM BLOCK >> {}", BlockInit.ARDORIUM_BLOCK.get());
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
@@ -84,8 +88,11 @@ public class Baleful
 
     private void enqueueIMC(final InterModEnqueueEvent event)
     {
-        // some example code to dispatch IMC to another mod
         InterModComms.sendTo("baleful", "helloworld", () -> { LOGGER.info("Hello world from the MDK"); return "Hello world";});
+        InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("ring").build());
+        InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("necklace").build());
+        InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("hands").build());
+        InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("artifact").build());
     }
 
     private void processIMC(final InterModProcessEvent event)

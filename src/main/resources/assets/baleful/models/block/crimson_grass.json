@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "baleful:block/crimson_grass_top",
+    "bottom": "minecraft:block/end_stone",
+    "side": "baleful:block/crimson_grass_side"
+  }
+}

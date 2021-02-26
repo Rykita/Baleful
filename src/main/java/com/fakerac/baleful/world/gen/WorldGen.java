@@ -1,6 +1,7 @@
 package com.fakerac.baleful.world.gen;
 
 import com.fakerac.baleful.Baleful;
+import com.fakerac.baleful.init.BlockInit;
 import com.fakerac.baleful.util.RegistryHandler;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.ResourceLocation;
@@ -33,7 +34,7 @@ public class WorldGen {
     public static void addConfigFeatures(RegistryEvent.Register<Feature<?>> event) {
         Registry<ConfiguredFeature<?, ?>> registry = WorldGenRegistries.CONFIGURED_FEATURE;
         TOURMALINE_ORE = Feature.ORE.withConfiguration(
-                new OreFeatureConfig(OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, RegistryHandler.TOURMALINE_ORE.get().getDefaultState(), 10))
+                new OreFeatureConfig(OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.TOURMALINE_ORE.get().getDefaultState(), 10))
                 .range(64).square();
 
 

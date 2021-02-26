@@ -14,4 +14,6 @@ public class ArdoriumBlock extends Block {
         .sound(SoundType.NETHERITE)
         .setRequiresTool().harvestTool(ToolType.PICKAXE));
     }
+
+
 }

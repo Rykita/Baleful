@@ -1,6 +1,7 @@
 package com.fakerac.baleful.datagen.client;
 
 import com.fakerac.baleful.Baleful;
+import com.fakerac.baleful.init.BlockInit;
 import com.fakerac.baleful.util.RegistryHandler;
 import net.minecraft.block.RotatedPillarBlock;
 import net.minecraft.data.DataGenerator;
@@ -14,7 +15,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        axisBlock((RotatedPillarBlock) RegistryHandler.BLOSSOM_STEM_STRIPPED.get());
+        axisBlock((RotatedPillarBlock) BlockInit.BLOSSOM_STEM_STRIPPED.get());
 
     }
 }

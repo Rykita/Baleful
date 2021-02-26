@@ -1,5 +1,6 @@
 package com.fakerac.baleful.datagen.server;
 
+import com.fakerac.baleful.init.BlockInit;
 import com.fakerac.baleful.util.RegistryHandler;
 import net.minecraft.advancements.criterion.InventoryChangeTrigger;
 import net.minecraft.block.Blocks;
@@ -19,7 +20,7 @@ public class Recipes extends RecipeProvider {
 
     @Override
     protected void registerRecipes(Consumer<IFinishedRecipe> consumer) {
-        ShapedRecipeBuilder.shapedRecipe(RegistryHandler.BLOSSOM_PLANKS.get())
+        ShapedRecipeBuilder.shapedRecipe(BlockInit.BLOSSOM_PLANKS.get())
                 .patternLine("   ")
                 .patternLine(" # ")
                 .patternLine("   ")

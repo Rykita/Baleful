@@ -1,8 +1,10 @@
 package com.fakerac.baleful.tools;
 
+import com.fakerac.baleful.init.ItemInit;
 import com.fakerac.baleful.util.RegistryHandler;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
+import net.minecraftforge.fml.RegistryObject;
 
 import java.util.function.Supplier;
 
@@ -12,7 +14,18 @@ public enum BalefulItemTier implements IItemTier {
         return Ingredient.EMPTY; }),
 
     ARDORIUM(5, 2561, 12.0F, 0.0F, 18, () -> {
-        return Ingredient.fromItems(RegistryHandler.ARDORIUM_INGOT.get()); });
+        return Ingredient.fromItems(ItemInit.ARDORIUM_INGOT.get()); }),
+
+    NYDARYX(6, 3542, 20.0F, 0.0F, 22, () -> {
+        return Ingredient.fromItems(ItemInit.ARDORIUM_INGOT.get()); }),
+
+    TIER1_WEAPON_TYPE(5, 3021, 12.0F, 0.0F, 20, () -> {
+        return Ingredient.fromItems(ItemInit.TOURMALINE.get()); }),
+
+    TIER2_WEAPON_TYPE_MALLET(6, 3021, 12.0F, 0.0F, 22, () -> {
+        return Ingredient.fromItems(ItemInit.TOURMALINE.get()); });
+
+
 
     private final int harvestLevel;
     private final int maxUses;

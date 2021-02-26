@@ -20,7 +20,7 @@ import net.minecraft.world.BossInfo;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerBossInfo;
 
-public class ArmstrongEntity extends ZombieEntity {
+public class    ArmstrongEntity extends ZombieEntity {
 
     public ArmstrongEntity(EntityType<? extends ArmstrongEntity> type, World worldIn) {
         super(type, worldIn);

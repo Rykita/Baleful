@@ -5,7 +5,7 @@
   "block.baleful.blossom_stem": "Kwietny trzon",
   "block.baleful.blossom_planks_stairs": "Kwietne schody",
   "block.baleful.blossom_planks_slab": "Kwietna płyta",
-  "item.baleful.murasama": "§4Murasama",
+  "item.baleful.murasama": "Murasama",
   "block.baleful.blossom_planks_fence": "Kwietny płot",
   "block.baleful.blossom_planks_fencegate": "Kwietna furtka",
   "block.baleful.blossom_planks_button": "Kwietny guzik",
@@ -27,5 +27,7 @@
   "advancements.husbandry.baleful_hoe.description": "CZEMU?! Strać dwie sztabki Ardorium poprzez stworzenie Ardoryjnej motyki. Czy czujesz się dumny?",
   "advancements.tierone.root.title": "Poziom Pierwszy",
   "advancements.tierone.root.desc": "Zdobądź niestabilną sztabkę Ardorium",
-  "block.baleful.rose": "Róża"
+  "block.baleful.rose": "Róża",
+  "advancements.husbandry.nydaryx_hoe.title": "Naprawdę?",
+  "advancements.husbandry.nydaryx_hoe.description": "Co jest z tobą nie tak?"
 }
