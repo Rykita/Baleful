@@ -1,9 +1,0 @@
-{
-  "required": true,
-  "package": "com.fakerac.baleful.mixin",
-  "compatibilityLevel": "JAVA_8",
-  "refmap": "baleful.refmap.json",
-  "mixins": [
-  ],
-  "minVersion": "0.8"
-}

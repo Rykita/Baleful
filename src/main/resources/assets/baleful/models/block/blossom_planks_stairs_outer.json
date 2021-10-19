@@ -1,8 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "baleful:block/blossom_planks",
-    "top": "baleful:block/blossom_planks",
-    "side": "baleful:block/blossom_planks"
-  }
-}

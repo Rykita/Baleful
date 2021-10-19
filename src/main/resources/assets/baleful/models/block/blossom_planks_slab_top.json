@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab_top",
-  "textures": {
-    "bottom": "baleful:block/blossom_planks",
-    "top": "baleful:block/blossom_planks",
-    "side": "baleful:block/blossom_planks"
-  }
-}

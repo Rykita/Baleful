@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "baleful:item/unstable_ardorium_ingot"
-  }
-}

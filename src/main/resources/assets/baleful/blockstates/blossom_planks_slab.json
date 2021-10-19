@@ -1,7 +1,0 @@
-{
-  "variants": {
-    "type=bottom": { "model": "baleful:block/blossom_planks_slab" },
-    "type=top": {"model":  "baleful:block/blossom_planks_slab_top"},
-    "type=double": {"model": "baleful:block/blossom_planks"}
-  }
-}
